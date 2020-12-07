@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check Fibonacci</title>
+</head>
+<body>
+<script>
+    let number = parseInt(prompt('Nhap so can kiem tra'));
+    alert(isFibonacci(number));
+
+    function isFibonacci(number) {
+        let a = 0;
+        let b = 1;
+        for (let i = 0; i < number; i++) {
+            let c = a + b;
+            a = b;
+            b = c;
+            if (c === number) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+</script>
+</body>
+</html>
