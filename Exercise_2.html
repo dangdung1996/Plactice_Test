@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Try Remove From Array</title>
+</head>
+<body>
+<script>
+
+    // function tryRemoveFromArray1(arr) {
+    //     let x = parseInt(prompt('Nhập x'))
+    //     for (let i = 0; i < arr.length;) {
+    //         if (x === arr[i]) {
+    //             arr.splice(i, 1);
+    //         } else {
+    //             i++
+    //         }
+    //     }
+    //     return arr;
+    // }
+    //
+    // alert(tryRemoveFromArray1([6, 6, 61, 7, 36, 36, 56, 9]));
+
+    //--------------------------------------
+
+    function tryRemoveFromArray(arr, x) {
+        x = parseInt(prompt("Nhập x : "));
+        let i = 0;
+        while (i < arr.length) {
+            if (x === arr[i]) {
+                arr.splice(i, 1);
+            } else
+                i++;
+        }
+        return arr;
+    }
+
+    alert(tryRemoveFromArray([6, 6, 63, 24, 6, 35, 29, 15, 3, 3]));
+
+</script>
+</body>
+</html>
